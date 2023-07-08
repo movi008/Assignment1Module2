@@ -77,5 +77,86 @@
     
     </script>
 
+
+
+    <h2>Exercise 6: </h2>
+
+    <script>
+        function getLargestNumber(a, b) {
+            return a > b ? a : b;
+        }
+
+        document.write(getLargestNumber(12, 5)); // Output: 12
+
+    </script>
+
+
+    <h2>Exercise 7: </h2>
+
+    <script>
+
+        function getAddressCity(address) {
+            return address?.city ?? "Unknown";
+        }
+
+        const address1 = { street: '123 Main St', city: 'New York', country: 'USA' };
+        document.write(getAddressCity(address1)); // Output: New York
+
+
+    </script>
+
+    <h2>Exercise 8: </h2>
+
+    <script>
+        function doubleNumbers(numbers) {
+            return numbers.map(number => number * 2);
+        }
+
+        
+
+        const numbers2 = [5, 10, 20, 30];
+        document.write(doubleNumbers(numbers2)); // Output: [10, 20, 40, 60]
+
+
+    </script>
+
+    <h2>Exercise 9: </h2>
+
+    <script>
+
+        function filterEvenNumbers(numbers) {
+             return numbers.filter(number => number % 2 === 0);
+        }
+
+        const numbers1 = [1, 2, 3, 4, 5, 6];
+        document.write(filterEvenNumbers(numbers1)); // Output: [2, 4, 6]
+
+    </script>
+
+    <h2>Exercise 10: </h2>
+
+    <script>
+        function sumArray(numbers) {
+            return numbers.reduce((sum, number) => sum + number, 0);
+        }   
+
+        const numbers10 = [1, 2, 3, 4, 5];
+        document.write(sumArray(numbers10)); // Output: 15
+
+    </script>
+
+
+    <h2>Exercise 11: </h2>
+
+    <script>
+        function sortNumbers(numbers) {
+            return numbers.sort((a, b) => a - b);
+        }
+
+        const numbers20 = [5, 2, 8, 1, 9];
+        document.write(sortNumbers(numbers20)); // Output: [1, 2, 5, 8, 9]
+      
+    </script> 
+
 </body>
 </html>
