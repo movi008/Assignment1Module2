@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 - Module 2</title>
+</head>
+<body>
+
+    <h2>Exercise 1: </h2>
+
+    <script>
+
+        function destructureExample(obj, arr) {
+            const { name, age } = obj;
+            const [val1, , val2] = arr;
+            
+            return { name, age, val1, val2 };
+        }
+
+        const obj = { name: 'John', age: 30 };
+            const arr = ['a', 'b', 'c'];
+
+            const result = destructureExample(obj, arr);
+            document.write(result);
+
+    </script>    
+
+
+    <h2>Exercise 2: </h2>
+
+    <script>
+
+        function sumNumbers(...numbers) {
+            return numbers.reduce((sum, number) => sum + number, 0);
+        }
+
+        document.write(sumNumbers(5, 10, 15, 20)); // Output: 50
+        
+    </script> 
+    
+
+    <h2>Exercise 3: </h2>
+
+    <script>
+
+        function createGreeting(name) {
+            return `Hello, ${name}! Welcome to our website.`;
+        }
+
+        document.write(createGreeting('Mirza')); // Output: Hello, John! Welcome to our website.
+
+
+    </script>
+
+
+    <h2>Exercise 4: </h2>
+    
+    <script>
+
+        function isEven(number) {
+            return number % 2 === 0 ? 'Even </br>' : 'Odd';
+        }
+
+        document.write(isEven(4)); // Output: Even
+        document.write(isEven(7)); // Output: Odd
+
+    </script>
+
+    <h2>Exercise 5: </h2>
+
+    <script> 
+    
+    const multiply = (a, b) => a * b;
+
+    document.write(multiply(2, 3)); // Output: 6
+    
+    </script>
+
+</body>
+</html>
