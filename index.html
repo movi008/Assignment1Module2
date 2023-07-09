@@ -9,20 +9,24 @@
 
     <h2>Exercise 1: </h2>
 
+    <h3>Please check console to get the result.</h3>
+
     <script>
 
-        function destructureExample(obj, arr) {
-            const { name, age } = obj;
-            const [val1, , val2] = arr;
-            
-            return { name, age, val1, val2 };
+    function destructureExample(obj, arr) {
+        const { name, age } = obj;
+        const [value1, , value2] = arr;
+        
+        return { name, age };
         }
 
-        const obj = { name: 'John', age: 30 };
-            const arr = ['a', 'b', 'c'];
+        // Example usage:
+        const obj = { name: 'John', age: 30, city: 'New York' };
+        const arr = [10, 20, 30, 40];
 
-            const result = destructureExample(obj, arr);
-            document.write(result);
+        const result = destructureExample(obj, arr);
+        console.log(result); // Output: { name: 'John', age: 30 }
+
 
     </script>    
 
